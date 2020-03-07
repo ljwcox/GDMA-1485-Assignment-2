@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*--Assignment 2--*/
+
 /*--------------------------------------------------------------
 >>> CSS STANDARDS
 ----------------------------------------------------------------
@@ -51,25 +53,50 @@
 
 /* -- TYPOGRAPHY: Headings, Pragraphs, Blockquotes, Anchors-- */ 
 
-header p {
-  text-transform: uppercase;
-}
+/*--font-family: 'Montserrat', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Source Sans Pro', sans-serif;--*/
+
 
 /*--example how to style the blockquote:  b.	blockquote {
 font-size: 1em
 line-height: 150%
 color: gray }--*/
 
-blockquote {
+/*--for individual page identification and styling--*/
+/*#home {
+	
+}
+
+
+#about {
 	
 	
 }
+
+#take-action {
+	
+	
+}
+
+blockquote {
+	
+	
+}*/
 
 /*--------------------------------------------------------------
 5.0 - Objects
 -------------------------------------------------------------- */
 
 /* -- FRAMEWORK -- */ 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-string: border-box;
+	-o-box-string: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
 
 .wrapper {
 	width: 1170px;
@@ -77,8 +104,7 @@ blockquote {
 }
 
 .row {
-	overflow: auto;
-	
+	overflow: auto;	
 }
 
 /*--------------------------------------------------------------
@@ -89,27 +115,40 @@ blockquote {
 
 /* -- HEADER -- */
 
-/*--need to do something about the tiled images and proper sizing for the logo png--*/
+h1 {
+	width: 585px;
+	float: left;
+	
+}
+
+nav {
+	width: 585px;
+	float: right;	
+	font: normal 200 16px 'Source Sans Pro', sans-serif;
+}
+
+li 	{
+	display: inline-block;
+	
+}
+
+/*--TODO need to do something about the tiled images and proper sizing for the logo png--*/
 
 #bg-img-home {
-	background-image: url("../img/hero.jpeg");
-	background-color: #1E476B;	
+	background-image: url("../img/hero.jpeg");	
 }
 
 #bg-img-about {
 	background-image: url("../img/about.jpeg");
-	background-color: #1E476B;
 }
 
 #bg-img-action {
-	background-image: url("../img/take-action.jpg");
-	background-color:  #1E476B; 	
+	background-image: url("../img/take-action.jpg");	
 }
 
-h1 {
-	width: 200px;
-	height: 85px;
 
+/*header p {
+  text-transform: uppercase;
 }
 
 /* -- NAVIGATION -- */

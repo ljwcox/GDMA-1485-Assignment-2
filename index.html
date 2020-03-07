@@ -2,21 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Home</title>
-
+<title>Bedford Foundation Home Page</title>
+<!--Assignment 2-->
 <link rel="stylesheet" type="text/css" href="css/normalize.css">	
 <link rel="stylesheet" type="text/css" href="css/main.css">
 	
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i|Montserrat:100,100i,300,400,600,700|Source+Sans+Pro&display=swap" rel="stylesheet">
+	
+	
 </head>
 
-<body>
+<body id="home">
 	
-	<header id="bg-img-home"> <!--build an imgage bg-img-home-->
+	<div id="bg-img-home"> <!--TODO build an imgage bg-img-home-->
 			<div class="wrapper">
 				<div class="row">
-					<div>
-						<h1><img src="img/logo.png" alt=""></h1>
-					</div>
+					
+					<header>
+						<h1><img src="img/logo-bedford.png" alt=""></h1>
+					</header>
 						<nav>
 							<ul>
 								<li><a href="#">Home</a></li>
@@ -27,10 +31,10 @@
 				</div>
 			</div>
 		
-			<p>sustainability starts with you</p>
+			<p>sustainability<br><span>starts with you</span></p>
 			<p><a href="about.html">Learn More</a></p>
 		
-	</header>
+	</div>
 		<div class="wrapper">
 			<div>
 				<p>We conserve land through outreach, restoration, and research.</p>
@@ -71,24 +75,31 @@ methods, and the results of our decades of advocacy.</p>
 		</div>	
 
 <!--div 100% for color the full width of the browser, teal background-->	
+	<footer>
 	<div id="bg-icon-teal">
 		<div class="wrapper"><!--to control the wrapper-->
-		<footer>
+		
 			<!--images sprintes in a ul-->
 			<ul>
 				<li><a href="img/icon-fb-sprites.png" target="_blank"><span>Facebook</span></a></li>
 				<li><a href="img/icon-flkr-sprite.png" target="_blank"><span>Flicker</span></a></li>
 				<li><a href="img/icon-twtr-sprite.png" target="_blank"><span>Twitter</span></a></li>
 			</ul>
+		</div>
 			
+<!--  - The footer will need to have two separate backgrounds, which means it will also need two separate wrappers.
+- Div line 84 should have the second background color applied
+Phone and email should be the only clickable text, be sure to use the content that was provided-->
 			<div>
-				<address>
-					<ul>
-						<li>459 Broadway, New York</li>
-						<li><a href="tel:+12125550123">Call us at (212) 555-0123</a></li>
-						<li><a href="mailto:template@gmail.com">Contact Us at template@gmail.com</a></li>
-					</ul>
-				</address>
+				<div class="wrapper">
+					<address>
+						<ul>
+							<li>459 Broadway, New York</li>
+							<li><a href="tel:+12125550123">Call us at (212) 555-0123</a></li>
+							<li><a href="mailto:template@gmail.com">Contact Us at template@gmail.com</a></li>
+						</ul>
+					</address>
+				 </div>	
 				
 <!--example from book how to make a clickable hypertext link syntax: <a href="url">linked text or element</a>   text: <a href="http://www.oreilly.com">Go to the O'Reilly Media site</a>	 here is an example of how to make clickable hypertext link with an image:   <a href="http://www.oreilly.com"><img src="orm.gif" alt="O'Reilly tarsier logo"></a>-->
 				
@@ -96,8 +107,26 @@ methods, and the results of our decades of advocacy.</p>
 				
 			</div>	
 		</footer>
-		</div>
 	</div>	
+	
+<!-- Issues:  Home
+- Save images for web (under 100k)
+- Include alt attribute values for images that communicate text
+Index:
+
+ - Include a more descriptive title for the page “Bedford Foundation | Home”
+ - This paragraph will require a line break and span tag to style appropriately
+GDMA-1485-Assignment-2/index.html
+
+Line 30 in d2278ed
+
+ <p>sustainability starts with you</p> 
+ - The footer will need to have two separate backgrounds, which means it will also need two separate wrappers.
+ - Div line 74 can become the footer element.
+ - Div line 75 should close after the ul at line 82
+ - Div line 84 should have the second background color applied
+ - Address tag line 85 should have the wrapper class applied
+ - Phone and email should be the only clickable text, be sure to use the content that was provided-->	
 	
 </body>
 </html>
