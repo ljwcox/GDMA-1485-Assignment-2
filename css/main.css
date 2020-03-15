@@ -39,6 +39,29 @@
 
 --------------------------------------------------------------*/
 
+/*------------------------------------------------------------
+1.0 - SETTINGS
+--------------------------------------------------------------*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-string: border-box;
+	-o-box-string: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+/*------------------------------------------------------------
+3.0 - GENERIC
+-------------------------------------------------------------*/
+.wrapper {
+	width: 1170px;
+	margin:0 auto;	
+}
+
+.row {
+	overflow: auto;	
+}
+
 /*--------------------------------------------------------------
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
@@ -63,49 +86,13 @@ font-size: 1em
 line-height: 150%
 color: gray }--*/
 
-/*--for individual page identification and styling--*/
-/*#home {
-	
-}
-
-
-#about {
-	
-	
-}
-
-#take-action {
-	
-	
-}
-
-blockquote {
-	
-	
-}*/
 
 /*--------------------------------------------------------------
 5.0 - Objects
 -------------------------------------------------------------- */
 
 /* -- FRAMEWORK -- */ 
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-string: border-box;
-	-o-box-string: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-	
-}
 
-.wrapper {
-	width: 1170px;
-	margin:0 auto;	
-}
-
-.row {
-	overflow: auto;	
-}
 
 /*--------------------------------------------------------------
 6.0 - COMPONENTS
@@ -115,7 +102,7 @@ blockquote {
 
 /* -- HEADER -- */
 
-h1 {
+header div div div {
 	width: 585px;
 	float: left;
 	
@@ -134,16 +121,34 @@ li 	{
 
 /*--TODO need to do something about the tiled images and proper sizing for the logo png--*/
 
-#bg-img-home {
-	background-image: url("../img/hero.jpeg");	
+#bg-img-hero {
+	background: url("../img/hero.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 150px 0 75px;
 }
 
 #bg-img-about {
-	background-image: url("../img/about.jpeg");
+	background: url("../img/about.jpeg")no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 150px 0 75px;
 }
 
 #bg-img-action {
-	background-image: url("../img/take-action.jpg");	
+	background: url("../img/take-action.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 150px 0 75px;
 }
 
 
@@ -157,9 +162,12 @@ li 	{
 
 #bg-icon-teal {
 	background-color: #36b3ac;
-	
 }
 
+#bg-blk {
+	background-color: #000;
+	color: #fff;
+}
 /*--------------------------------------------------------------
 7.0 -UTILITIES
 -------------------------------------------------------------- */
