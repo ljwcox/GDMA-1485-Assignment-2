@@ -6,91 +6,82 @@
 <!--Assignment 2-->
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i|Montserrat:100,100i,300,400,600,700|Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i; Montserrat:100,100i,300,400,600,700|Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<header id="bg-img-hero" alt="woman-in-solitude-standing-on-rock-over-looking-lake">
+<header>
+	<div id="bg-img-hero" alt="woman-in-solitude-standing-on-rock-over-looking-lake">
   <div class="wrapper">
     <div class="row">
-      <div>
-        <h1><img src="img/logo-bedford.png" alt="bedford-foundation-logo"></h1>
-     
-	</div>
-     	 <nav>
-      	  	<ul>
-          		<li><a href="#">Home</a></li>
-          		<li><a href="about.html">About</a></li>
-          		<li><a href="take-action.html">Take Action</a></li>
-       		</ul>
-     	 </nav>
+      <div> <img src="img/logo-bedford.png" alt="bedford-foundation"> </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="take-action.html">Take Action</a></li>
+        </ul>
+      </nav>
     </div>
-   
-	 <p>sustainability<br>
-      <span>starts with you</span></p>
+    <h1><span id="p-italic">sustainability</span><br>starts with you</h1>
     <p><a href="about.html">Learn More</a></p>
   </div>
+</div>	
 </header>
 <!--------------------------------------------------------------------------------------------------------------------->
-<section>
-  <div class="wrapper">
-    <div>
-      <p>We conserve land through outreach, restoration, and research.</p>
-      <p>Some of the Earth's greatest landscapes are threatened by increased road construction, oil 
-        and gas exploration, and mining. We aim to protect these areas from inappropriate develop-
-        ment, but we cannot achieve our goals alone. Find out how you can help.</p>
-      <p>All photography provided by <a href="http://jaredchambers.com/landscapes">Jared Chambers</a></p>
-    </div>
-    <!--------------------------------------------------------------------------------------------------------------------->
-    <div class="row">
-      <section> <img src="img/about.jpeg" alt="expansion-bride-wrapped-around-ocean-coast-line" width="500">
-        <header>
-          <h2>About</h2>
-        </header>
-        <div>
-          <p>Find out about our organization, mission, our
-            methods, and the results of our decades of advocacy.</p>
-          <p><a href="about.html">Learn More</a></p>
-        </div>
-      </section>
-      <!--------------------------------------------------------------------------------------------------------------------->
-      <section> <img src="img/take-action.jpg" alt="woman-in-solitude-facing-majestic-waterfall" width="500">
-        <header>
-          <h2>Take Action</h2>
-        </header>
-        <div>
-          <p>Find out about our organization, mission, our
-            methods, and the results of our decades of advocacy.</p>
-          <p><a href="take-action.html">Find Out How</a></p>
-        </div>
-      </section>
-    </div>
+
+<div class="wrapper">
+  <p>We conserve land through outreach, restoration, and research.</p>
+  <div>
+    <p>Some of the Earth's greatest landscapes are threatened by increased road construction, oil 
+      and gas exploration, and mining. We aim to protect these areas from inappropriate develop-
+      ment, but we cannot achieve our goals alone. Find out how you can help.</p>
+    <p>All photography provided by <a href="http://jaredchambers.com/landscapes">Jared Chambers</a></p>
   </div>
-</section>
+  <!--------------------------------------------------------------------------------------------------------------------->
+  <div class="row">
+    <section> <img src="img/about.jpeg" alt="expanse-bridge-overlooking-ocean" width="500">
+      <header>
+        <h2>About</h2>
+      </header>
+      <!--TODO: ADD PADDING AROUND PARAGRAPHS-->
+      <p>Find out about our organization, mission, our
+        methods, and the results of our decades of advocacy.</p>
+      <p><a href="about.html">Learn More</a></p>
+    </section>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <section> <img src="img/take-action.jpg" alt="woman-in-solitude-facing-majestic-waterfall" width="500">
+      <header>
+        <h2>Take Action</h2>
+      </header>
+      <div>
+        <p>Find out about our organization, mission, our
+          methods, and the results of our decades of advocacy.</p>
+        <p><a href="take-action.html">Find Out How</a></p>
+      </div>
+    </section>
+  </div>
+</div>
 
 <!---------------------------------------------------------------------------------------------------------------------> 
 <!--footer 100% for color the full width of the browser, black background, target div inside first-child with teal background-->
-<footer id="bg-blk">
-    <div id="bg-icon-teal">
-    	<div class="wrapper">
-			<ul>
-       			 <li><a href="https://www.facebook.com/" target="_blank"><span><img src="img/icon-fb-sprites.png" alt="facebook-icon"></span></a></li>
-       			 <li><a href="https://www.flickr.com/" target="_blank"><span><img src="img/icon-flkr-sprite.png" alt="flicker-icon"></span></a></li>
-        		<li><a href="https://twitter.com/" target="_blank"><span><img src="img/icon-twtr-sprite.png" alt="twitter-icon"></span></a></li>
-      		</ul>
-		</div>  	
+<footer><!--TODO DOES NOT NEED ID, UNIQUE ELEMENT-->
+  <div id="bg-icon-teal">
+    <div class="wrapper"><!--TODO- Sprites should be placed in through CSS, refer to in class tutorial for correct HTLM / CSS setup-->
+      <ul>
+        <li><a href="https://www.facebook.com/" target="_blank"></a></li>
+        <li><a href="https://www.flickr.com/" target="_blank"></a></li>
+        <li><a href="https://twitter.com/" target="_blank"></a></li>
+      </ul>
     </div>
- 
-
+  </div>
   <address class="wrapper">
-  	<ul>
-    	<li><a href="https://www.google.com/maps/place/459+Broadway,+New+York,+NY+10013/@40.7208592,-74.00315,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598bd3fc4031:0x48b829f544b1ce3f!8m2!3d40.7208592!4d-74.0009613">459 Broadway, New York</a></li>
-    	<li><a href="tel:+12125550123">(212) 555-0123</a></li>
-    	<li><a href="mailto:template@gmail.com">template@gmail.com</a></li>
-  	</ul>
+  <ul>
+    <li><a href="https://www.google.com/maps/place/459+Broadway,+New+York,+NY+10013/@40.7208592,-74.00315,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598bd3fc4031:0x48b829f544b1ce3f!8m2!3d40.7208592!4d-74.0009613">459 Broadway, New York</a></li>
+    <li><a href="tel:+12125550123">(212) 555-0123</a></li>
+    <li><a href="mailto:template@gmail.com">template@gmail.com</a></li>
+  </ul>
   </address>
 </footer>
-
-
 </body>
 </html>
