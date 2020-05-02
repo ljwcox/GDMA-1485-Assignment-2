@@ -76,21 +76,10 @@
 
 /* -- TYPOGRAPHY: Headings, Pragraphs, Blockquotes, Anchors-- */ 
 
-/*--font-family: 'Montserrat', sans-serif;
+/*--font-family: 'Source Sans Pro', sans-serif;
 font-family: 'EB Garamond', serif;
-font-family: 'Source Sans Pro', sans-serif;--*/
-
-
-/*--example how to style the blockquote:  b.	blockquote {
-font-size: 1em
-line-height: 150%
-color: gray }--*/
-
-
-/*--shorthand 
-body {
-  font: font-style font-variant font-weight font-size/line-height font-family;
-}--*/
+font-family: 'Montserrat', sans-serif;
+--*/
 
 /*--------------------------------------------------------------
 5.0 - Objects
@@ -98,31 +87,50 @@ body {
 
 /* -- FRAMEWORK -- */ 
 
+.col-1-2 {
+	width: 585px;
+	height: 100px;
+	padding: 0 10px;
+	margin-bottom: 30px;
+	float: left;
+}
+
 
 /*--------------------------------------------------------------
 6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
-/* -- HEADER -- */
+/*--BUTTONS--*/
 
-header div div div {
-	width: 585px;
-	float: left;
+/*--HEADER--*/
+
+body div{
+	width: 1170px;
 	
 }
+
+body div div div {
+	padding: 30px;
+}
+
+/*--NAVIGATION--*/
 
 nav {
 	font: normal 300 16px/18px 'Source Sans Pro', sans-serif;
 	float: right;
+	text-align: right;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
-li 	{
-	display: inline-block;
-	margin: 30px 0;
+li {
+  	display: inline;
+	margin: 0 10px;
 	padding: 10px;
-	text-decoration: none;
-	
 }
 
 li:last-child {
@@ -131,7 +139,11 @@ li:last-child {
 	-o-border-radius: 50px;
 	-ms-border-radius: 50px;
 	border-radius: 50px;
-	border: #FFFAFA 1px  solid;
+	border: #fffafa 1px  solid;
+}
+
+a {
+	text-decoration: none;
 }
 
 li a:link {
@@ -140,20 +152,30 @@ li a:link {
 }
 
 li a:visited {
+	background-color: #fff;
 	color: #000;
 	
 }
 
-li a:last-child a:hover{
+li a:last-child a:hover {
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	-o-border-radius: 50px;
 	-ms-border-radius: 50px;
 	border-radius: 50px;
-	background: #fff;
-	color: #000;
-	
+	color: #000;	
 }
+
+	
+/*----------------------------------------------------------------------------
+-------------------DRAWING A LINE IN THE SAND---------------------------------
+-----------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+/* -- HEADER -- */
 
 #p-italic {
 	text-align: center;
@@ -170,11 +192,50 @@ h1 {
 }
 
 h1 {
-	color: #fff;
-	
+	color: #fff;	
 }
 
+h2 {
+	font-family: 'EB Garamond', serif;
+	font-size: 24px;
+	font-weight: 300;
+	color: #000;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	color: #ccc;
+	text-align: center;
+}
+
+
 /* -- BUTTONS -- */ 
+
+#lrn-more {
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	-ms-border-radius: 50px;
+	border-radius: 50px;
+	border: #fff 1px  solid;
+	background-color: teal;
+	color: #fff;
+}
+
+#lrn-more {
+	width: 100px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+#lrn-more {
+	font: 100 16px/18px 'Source Sans Pro', sans-serif;
+}
 
 
 /*-------------------------------------------------------------*/
@@ -187,6 +248,11 @@ h1 {
 	-o-background-size: cover;
 	background-size: cover;
 	padding: 75px 0 150px;
+	margin-bottom: 30px;
+}
+
+#bg-img-hero {
+  background-color: #ccc;
 }
 
 #bg-img-about {
@@ -197,6 +263,11 @@ h1 {
 	-o-background-size: cover;
 	background-size: cover;
 	padding: 75px 0 150px;
+	margin-bottom: 30px;
+}
+
+#bg-img-about {
+  background-color: #ccc;
 }
 
 #bg-img-action {
@@ -207,21 +278,45 @@ h1 {
 	-o-background-size: cover;
 	background-size: cover;
 	padding: 750px 0 150px;
+	margin-bottom: 30px;
 }
 
+#bg-img-action {
+  background-color: #ccc;
+}
 
 /*header p {
   text-transform: uppercase;
 }--*/
 
-blockquote {
-	font-size: 1em;
-	line-height: 150%;
-	color: gray ;
+blockquote, .descrip {
+	width: 960px;
+	font-family: 'EB Garamond', serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.5em;
+	color: #000;
+	text-align: center;
 }
 
-/* -- NAVIGATION -- */
+.descrip {
+	width: 250px;
+}
 
+#author {
+	width: 960px;
+	font-family: 'EB Garamond', serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #000;
+	text-align: center;
+	
+}
+
+#signature {
+	color: #36b3ac;
+	
+}
 /* -- FOOTER -- */
 
 #bg-icon-teal {
